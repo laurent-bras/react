@@ -14,7 +14,7 @@
                 "code": "sq",
                 "name": "Albanian"
             },
-            "flag": "https://restcountries.eu/data/alb.svg"
+            "flag": "http://via.placeholder.com/120x80"
         },
         {
             "name": "Algeria",
@@ -30,7 +30,7 @@
                 "code": "ar",
                 "name": "Arabic"
             },
-            "flag": "https://restcountries.eu/data/dza.svg"
+            "flag": "http://via.placeholder.com/120x80"
         },
         {
             "name": "American Samoa",
@@ -46,7 +46,7 @@
                 "code": "en",
                 "name": "English"
             },
-            "flag": "https://restcountries.eu/data/asm.svg"
+            "flag": "http://via.placeholder.com/120x80"
         },
         {
             "name": "Andorra",
@@ -62,7 +62,7 @@
                 "code": "ca",
                 "name": "Catalan"
             },
-            "flag": "https://restcountries.eu/data/and.svg"
+            "flag": "http://via.placeholder.com/120x80"
         },
         {
             "name": "Angola",
@@ -78,55 +78,7 @@
                 "code": "pt",
                 "name": "Portuguese"
             },
-            "flag": "https://restcountries.eu/data/ago.svg"
-        },
-        {
-            "name": "Anguilla",
-            "code": "AI",
-            "capital": "The Valley",
-            "region": "NA",
-            "currency": {
-                "code": "XCD",
-                "name": "East Caribbean dollar",
-                "symbol": "$"
-            },
-            "language": {
-                "code": "en",
-                "name": "English"
-            },
-            "flag": "https://restcountries.eu/data/aia.svg"
-        },
-        {
-            "name": "Antigua and Barbuda",
-            "code": "AG",
-            "capital": "Saint John's",
-            "region": "NA",
-            "currency": {
-                "code": "XCD",
-                "name": "East Caribbean dollar",
-                "symbol": "$"
-            },
-            "language": {
-                "code": "en",
-                "name": "English"
-            },
-            "flag": "https://restcountries.eu/data/atg.svg"
-        },
-        {
-            "name": "Argentina",
-            "code": "AR",
-            "capital": "Buenos Aires",
-            "region": "SA",
-            "currency": {
-                "code": "ARS",
-                "name": "Argentine peso",
-                "symbol": "$"
-            },
-            "language": {
-                "code": "es",
-                "name": "Spanish"
-            },
-            "flag": "https://restcountries.eu/data/arg.svg"
+            "flag": "http://via.placeholder.com/120x80"
         }
     ]
 }

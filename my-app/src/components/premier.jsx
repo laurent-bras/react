@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react'
 import countries from '../assets/countries.json'
+import '../assets/css/premier.css';
     
 class Req extends Component { 
     constructor (props) {
@@ -31,7 +32,7 @@ class Req extends Component {
         
         // Binding this keyword 
         this.updateState = this.updateState.bind(this) 
-        this.showDetails = this.showDetails.bind(this) 
+        this.updateDisplay = this.updateDisplay.bind(this) 
     } 
     
     componentDidMount() {
@@ -72,26 +73,36 @@ class Req extends Component {
             return { details: out }
         })
     }
+
+    async updateDisplay(e) {
+        await this.showDetails(e.target.value);
+    }
     
     render () {
       return (
         <div>
-            <p>{this.state.details.name}</p>
-            <img style={{height: 100 + 'px'}} src={this.state.details.flag} alt="logo" />
+            <div className="container">
+                <div className="screen">
+                    <p className="title">{this.state.details.name}</p>
+                    <img style={{height: 100 + 'px'}} src={this.state.details.flag} alt="flag" />
 
-            <p>{this.state.details.code}</p>
-            <p>{this.state.details.capital}</p>
-            <p>{this.state.details.region}</p>
-            <p>lang: {this.state.details.language.name}</p>
+                    <p>{this.state.details.code}</p>
+                    <p>{this.state.details.capital}</p>
+                    <p>{this.state.details.region}</p>
+                    <p>lang: {this.state.details.language.name}</p>
+                </div>
+                <div className="list">
+                    <p>Message: {this.state.message}</p>
+                        <ul>
+                            {this.state.countries.list.map((item, index) => (
+                                <li key={index} value={index} className="country" onMouseOver={this.updateDisplay}>{item.name} - Cap: {item.capital}</li>
+                            ))}
+                        </ul>
+                    <button onClick={this.updateState}>Increase messages!</button> 
 
+                </div>
 
-          <p>Message: {this.state.message}</p>
-            <ul>
-                {this.state.countries.list.map((item, index) => (
-                    <li key={index} value={index} onMouseOver={e => this.showDetails(e.target.value)}>{item.name} - C. {item.capital}</li>
-                ))}
-            </ul>
-          <button onClick={this.updateState}>Click me!</button> 
+            </div>
         </div>
       );
     }
